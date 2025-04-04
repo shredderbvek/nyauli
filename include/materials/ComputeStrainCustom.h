@@ -11,9 +11,7 @@ public:
   ComputeStrainCustom(const InputParameters &);
 
 protected:
-  // REMOVE_BEGIN
   virtual void computeQpProperties() override;
-  // REMOVE_END
 
   std::vector<const ADVariableGradient *> _grad_u;
 
